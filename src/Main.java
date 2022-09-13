@@ -2,6 +2,7 @@
 
 public class Main {
     public static void printObject(Object temp) {
+
         System.out.println(temp.toString());
     }
 
@@ -28,22 +29,22 @@ public class Main {
                 new Slytherin("Gregory Goyle", 13, 17, 15, 78, 34, 89, 87)
         };
 
-        Compare printMassage = new Compare();
+        Compare printMessage = new Compare();
         System.out.println("Сравнение учеников факультета Gryffindor");
-        printMassage.printCompare(gryffindor);
+        printMessage.printCompare(gryffindor[0], gryffindor[1]);
         System.out.println("=============================================================================");
         System.out.println("Сравнение учеников факультета Puffenduys");
-        printMassage.printCompare(puffenduys);
+        printMessage.printCompare(puffenduys[1], puffenduys[2]);
         System.out.println("=============================================================================");
         System.out.println("Сравнение учеников факультета Kogtevrans");
-        printMassage.printCompare(kogtevrans);
+        printMessage.printCompare(kogtevrans[0], kogtevrans[2]);
         System.out.println("=============================================================================");
         System.out.println("Сравнение учеников факультета Slytherins");
-        printMassage.printCompare(slytherins);
+        printMessage.printCompare(slytherins[0], slytherins[1]);
         System.out.println("=============================================================================");
         System.out.println("Сравнение 2х учеников Hogwarts");
         Hogwarts[] hogwarts = {gryffindor[0], slytherins[1]};
-        printMassage.printCompare(hogwarts[0], hogwarts[1]);
+        printMessage.printCompare(hogwarts[0], hogwarts[1]);
         System.out.println("=============================================================================");
         System.out.println("Вывод на печать информации по 1 ученику с каждого факультета");
         printObject(gryffindor[0]);
